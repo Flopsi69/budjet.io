@@ -1,0 +1,574 @@
+/* All rules*/
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "MontserratBold";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "MontserratItalic";
+    src: url(../fonts/Montserrat-Italic.ttf);
+}
+
+@font-face {
+    font-family: "MontserratMed";
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-LightItalic";
+    src: url(../fonts/Montserrat-Italic.ttf);
+}
+/*
+@font-face {
+    font-family: "Montserrat-SemiBoldItalic";
+    src: url(../fonts/Montserrat-SemiBoldItalic.ttf);
+} */
+
+* {
+   font-family: "Montserrat";
+}
+
+body {
+    position: relative;
+    background-color: #231f20;
+    background: #231f20 url(../images/cells.svg) center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: "MontserratBold";
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin-bottom: 70px;
+}
+
+h2 {
+    color: #fff;
+    font-family: "MontserratBold";
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.title_shape {
+    margin: 100px 0;
+    padding: 38px 0;
+    background: url(../images/header-box.png) no-repeat center;
+}
+
+/* Headers */
+
+.header {
+    position: fixed;
+    left: 0;
+    z-index: 1200;
+    right: 0;
+    height: 89px;
+    background-color: #231f20;
+    padding: 12px 0;
+    color: white;
+}
+
+.navbar-toggler {
+    cursor: pointer;
+    margin-left: 10px;
+    display: none;
+    width: 35px;
+    height: 26px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    outline: none!important;
+}
+
+.navbar-toggler span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.navbar-toggler span:nth-child(1) {
+  top: 0px;
+}
+
+.navbar-toggler span:nth-child(2), .navbar-toggler span:nth-child(3) {
+  top: 10px;
+}
+
+.navbar-toggler span:nth-child(4) {
+  top: 20px;
+}
+
+.navbar-toggler.open span:nth-child(1) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+.navbar-toggler.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.navbar-toggler.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler.open span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+.ui-loader {
+    display: none;
+}
+
+
+.header_logo {
+    width: 64px;
+    height: 64px;
+    background: url(../images/logo.png) center no-repeat;
+}
+
+.navbar-nav .nav a {
+    color: #edebeb;
+    font-family: "Montserrat-Light";
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.navbar-nav .nav a.active {
+    font-family: "MontserratBold";
+}
+
+.navbar-nav .nav li + li {
+    padding-left: 40px;
+}
+
+.navbar-nav .nav li.active a, .navbar-nav .nav a:hover {
+    font-family: "MontserratBold";
+}
+
+
+.header_versions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 9999;
+}
+
+.header_versions a {
+    color: #b9bed2;
+    font-size: 10px;
+    letter-spacing: 1.4px;
+    border: 1px solid transparent;
+}
+
+.header_versions a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.header_version.active {
+    padding: 3px 10px 5px;
+    color: white;
+    font-family: "MontserratBold";
+    border: 1px solid #b9bed2;
+    border-radius: 13px;
+}
+
+/* End of Headers*/
+
+/* Header */
+.header_info {
+    background: url(../images/icon-phone.png) 35px center no-repeat;
+    padding-left: 90px;
+}
+
+.header_info span {
+    font-family: "Montserrat-Light";
+    font-size: 14px;
+    color: #f2f2f3;
+    letter-spacing: 1.4px;
+    line-height: 18px;
+}
+
+.header_info .under_phone {
+    font-family: "Montserrat-LightItalic";
+    font-size: 10px;
+    padding-top: 4px;
+}
+
+.header_social__icon {
+    width: 31px;
+    height: 31px;
+    float: left;
+    margin-right: 12px;
+}
+
+.header_social__icon:hover {
+    opacity: 0.7;
+} 
+
+/* End of the Header section */
+
+/* Start of the Cover section */
+.cover {
+    position: relative;
+    background: url(../images/cover-bg.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.cover .row {
+     min-height: calc(100vh - 89px);
+}
+
+.cover p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.cover p.marked {
+    font-family: "MontserratBold";
+    margin-bottom: 30px;
+}
+
+.cover_scroll {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.cover_scroll img {
+    cursor: pointer;
+}
+
+/* End of the Cover section */
+
+/* Start of the About section */
+
+.about {
+    position: relative;
+    overflow: hidden;
+}
+
+.about .title_shape {
+    margin-top: 190px;
+}
+
+.about img {
+    max-width: 100%;
+}
+
+.about .offset-custom {
+    margin-left: -16.666667%;
+}
+
+.about_body__text {
+    background-color: #ffffff;
+    padding: 65px 35px 65px 65px;
+}
+
+.about_body__text p {
+    font-family: "Montserrat";
+    color: #000;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.about_body__text p.marked {
+    font-family: "MontserratBold";
+    margin-bottom: 35px;
+}
+/* End of the About section */
+
+/* Start of Order section*/
+
+.order {
+    overflow: hidden;
+    color: white;
+}
+
+.order>.row {
+    background: #444444;
+}
+
+.order_dishes {
+    overflow: hidden;
+    display: none;
+    padding-top: 70px;
+    padding-bottom: 45px;
+}
+
+.order_dishes>.row+.row {
+    margin-top: 20px;
+}
+
+.order_dishes.active {
+    display: block;
+}
+
+.order_dish__info_header  {
+    font-family: "MontserratBold";
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 22px;
+}
+
+.order_dish__info_ingridients p {
+    font-family: "MontserratItalic";
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1.4px;
+    color: #f4f4f4;
+}
+
+.order .price span {
+    font-family: "MontserratBold";
+    font-size: 28px;
+    line-height: 34px;
+    padding-right: 8px;
+    letter-spacing: 2px;
+}
+
+.order .price sup {
+    position: relative;
+    top: -10px;
+    font-family: "MontserratBold";
+    letter-spacing: 2px;
+}
+
+.order_bottom>.col-md-8{
+    border-top: 1px solid white;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.order_bottom a {
+    font-family: "MontserratItalic";
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1.4px;
+}
+
+.order_bottom a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.order_bottom a span {
+    font-family: "MontserratBold";
+    font-style: italic;
+}
+
+.order_options {
+    background: url(../images/coffee-min.png) center no-repeat;
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+
+.order_options__type {
+    outline: 5px solid rgba(243, 243, 244, .5);
+    cursor: pointer;
+    padding: 40px;
+    width: 170px;
+    height: 170px;
+    transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+} 
+
+.order_options__type.active {
+    background-color: rgba(243, 243, 244, .5);
+}
+
+.order_options__type h4 {
+    font-family: "MontserratBold";
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.order_options__type.active h4 {
+    font-size: 18px;
+    letter-spacing: 2.5px;
+}
+
+.order_options__type:hover {
+    background-color: rgba(243, 243, 244, .5);  
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}  
+
+.order_options__type_morning {
+    background: url(../images/morning.png) no-repeat 50% 30%;
+}
+
+.order_options__type_dinner {
+    background: url(../images/dinner.png) no-repeat 50% 30%;
+}
+
+.order_options__type_supper {
+    background: url(../images/supper.png) no-repeat 50% 30%;
+}
+
+/* End of Order section */
+
+/* Start of Image_info section */
+
+.image_info  {
+    overflow: hidden;
+}
+
+/* Galery row */
+
+#carousel {
+    height: 600px;
+    position: relative;
+    text-align: center;
+}
+
+#carousel img {
+    display: none;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+/* Space row */
+
+.space img {
+    max-width: 100%;
+    margin: 15px 0;
+}
+
+
+/* Contacts row*/
+
+#map {
+    height: 600px;
+    width: 100%;
+}
+
+/* End of Image section */
+
+.footer {
+    padding: 85px 0 120px;
+    color: white;
+    background: #231f20;
+}
+
+.footer img {
+    max-width: 100%;
+}
+
+.footer_text p {
+    line-height: 30px;
+    letter-spacing: 0.8px;
+}
+
+.footer_contacts {
+    border-left: 2px solid #f3f3f4;
+    padding-left: 30px;
+}
+
+.footer_contacts p {
+    font-family: "MontserratMed";
+    letter-spacing: 1.8px;
+    color: #f3f3f4;
+}
+
+.footer_contact {
+    padding-left: 32px;
+    padding-bottom: 20px;
+}
+
+.footer_address {
+    padding-bottom: 0;
+}
+
+.footer_contact a {
+    color: #f3f3f4;
+    font-family: "MontserratMed";
+}
+
+.footer_phone {
+    background: url(../images/phone.png) no-repeat;
+}
+
+.footer_email {
+    background: url(../images/email.png) no-repeat;
+}
+
+/* End of the Footer */
+
+/* Start of the Magic of animation and hover */
