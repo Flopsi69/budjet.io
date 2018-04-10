@@ -9,10 +9,14 @@ $(document).ready(function(){
 	});
 
 	$("#carousel").on("swipeleft", function(){
+
 		carousel.next();
+		alert('left');
 	});
 	$("#carousel").on("swiperight", function(){
+
 		carousel.prev();
+		alert('right');
 	});
 
 	// Burder
@@ -63,24 +67,24 @@ $(document).ready(function(){
 			$('.navbar-toggler.open').click();
 		} else if (top < h_nav) {
 			$('header').css({
-				'top': 'unset',
-				'bottom': 'initial'
+				'top': 'initial',
+				'bottom': '0'
 			});
 		}
 	});
 	if ((h_hght - top) <= 0) {
 			$('header').css({
 				'top': '0',
-				'bottom': 'unset'
+				'bottom': 'initial'
 			});
 		} else if (top < h_hght && top > 0) {
 			$('header').css({
 				'bottom': top,
-				'top': 'unset'
+				'top': 'initial'
 			});
 		} else if (top < h_nav) {
 			$('header').css({
-				'top': 'unset',
+				'top': 'initial',
 				'bottom': '0'
 			});
 		}
