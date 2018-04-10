@@ -11,12 +11,12 @@ $(document).ready(function(){
 	$("#carousel").on("swipeleft", function(){
 
 		carousel.next();
-		alert('left');
+	
 	});
 	$("#carousel").on("swiperight", function(){
 
 		carousel.prev();
-		alert('right');
+		
 	});
 
 	// Burder
